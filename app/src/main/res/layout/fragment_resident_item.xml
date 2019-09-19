@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    card_view:cardBackgroundColor="#EFF8E2"
+    android:orientation="horizontal"
+    card_view:cardCornerRadius="5dp"
+    card_view:contentPadding="10dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:orientation="horizontal">
+
+        <!-- Workmate Photo -->
+        <ImageView
+            android:id="@+id/residentPhoto"
+            android:layout_width="@dimen/recycler_image_width"
+            android:layout_height="@dimen/recycler_image_height"
+            android:layout_margin="@dimen/recycler_image_margin"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/residentName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:ellipsize="end"
+            android:maxLines="1" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
